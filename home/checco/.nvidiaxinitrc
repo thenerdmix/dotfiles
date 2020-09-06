@@ -1,0 +1,7 @@
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+xrandr --dpi 96
+xrdb ~/.Xresources
+setxkbmap -layout it
+~/.fehbg &
+exec i3

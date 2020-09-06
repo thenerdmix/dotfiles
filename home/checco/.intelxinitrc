@@ -1,0 +1,4 @@
+xrdb ~/.Xresources
+setxkbmap -layout it
+~/.fehbg &
+exec i3
