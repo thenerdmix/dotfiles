@@ -1,3 +1,4 @@
+"fradeb's vim config
 "enter the current millenium
 set nocompatible
 
