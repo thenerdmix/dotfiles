@@ -36,6 +36,9 @@ autocmd filetype cpp nnoremap <F7> :!./%:r < in.txt<CR>
 "quando c'è il grader usa
 autocmd filetype cpp nnoremap <F10> :w <bar> !g++ -std=c++11 grader.cpp % -o %:r<CR>
 
+"markdown
+autocmd filetype markdown nnoremap <F9> :w <bar> !firefox %<CR>
+
 "fly between buffers
 nnoremap gb :ls<CR>:b<Space>
 nnoremap bn :bn<CR>
@@ -54,8 +57,22 @@ inoremap {;<CR> {<CR>};<ESC>O"
 "VimPlug
 call plug#begin('~/.vim/plugged')
 
+"productivity
 Plug 'tpope/vim-surround'
 Plug 'qpkorr/vim-renamer'
 
+"latex
+Plug 'lervag/vimtex'
+
 call plug#end()
 
+"vimtex options
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
+
+"change matching paren highlighting
+colorscheme ron
+hi MatchParen ctermbg=56
