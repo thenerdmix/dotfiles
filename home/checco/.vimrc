@@ -60,6 +60,7 @@ call plug#begin('~/.vim/plugged')
 "productivity
 Plug 'tpope/vim-surround'
 Plug 'qpkorr/vim-renamer'
+Plug 'sirver/ultisnips'
 
 "latex
 Plug 'lervag/vimtex'
@@ -73,6 +74,11 @@ let g:vimtex_quickfix_mode=0
 set conceallevel=1
 let g:tex_conceal='abdmg'
 
-"change matching paren highlighting
+"ultisnips options
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+"change matching parenthesis highlighting
 colorscheme ron
 hi MatchParen ctermbg=56
