@@ -228,8 +228,8 @@ bindsym $mod+i resize grow height 1 px or 1 ppt
 bindsym $mod+u resize shrink height 1 px or 1 ppt
 bindsym $mod+y resize grow width 1 px or 1 ppt
 
-# launch firefox wrapped in apulse
 bindsym $mod+c exec chromium 
+bindsym $mod+v exec exec urxvt -e ranger ~/casa/
 
 #screenshots
 bindsym Print exec clipboardscreenshot.sh
