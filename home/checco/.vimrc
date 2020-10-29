@@ -24,10 +24,11 @@ set shiftwidth=4
 set expandtab
 
 "python keyboard shortcuts
+"echo -ne '\033c' clears the screen
 "when you are in insert mode...
-autocmd FileType python imap <buffer> <F8> <esc>:w<CR>:!clear;python %<CR>
+autocmd FileType python imap <buffer> <F8> <esc>:w<CR>:!echo -ne '\033c';python %<CR>
 "other wise...
-autocmd FileType python map <buffer> <F8> <esc>:w<CR>:!clear;python %<CR>
+autocmd FileType python map <buffer> <F8> <esc>:w<CR>:!echo -ne '\033c';python %<CR>
 
 "c++
 autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -std=c++11 % -o %:r<CR>
