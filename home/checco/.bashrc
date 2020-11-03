@@ -14,3 +14,6 @@ alias meteo='curl wttr.in/pisa'
 alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=/'
 
 PS1='[\u@\h \W]\$ '
+
+#recording last directory
+export PROMPT_COMMAND="pwd > ~/.last_dir"

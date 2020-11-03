@@ -120,6 +120,17 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+set $ws11 "11"
+set $ws12 "12"
+set $ws13 "13"
+set $ws14 "14"
+set $ws15 "15"
+set $ws16 "16"
+set $ws17 "17"
+set $ws18 "18"
+set $ws19 "19"
+set $ws20 "20"
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -131,6 +142,18 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
+
+#more workspaces!
+bindsym $mod+mod1+1 workspace number $ws11
+bindsym $mod+mod1+2 workspace number $ws12
+bindsym $mod+mod1+3 workspace number $ws13
+bindsym $mod+mod1+4 workspace number $ws14
+bindsym $mod+mod1+5 workspace number $ws15
+bindsym $mod+mod1+6 workspace number $ws16
+bindsym $mod+mod1+7 workspace number $ws17
+bindsym $mod+mod1+8 workspace number $ws18
+bindsym $mod+mod1+9 workspace number $ws19
+bindsym $mod+mod1+0 workspace number $ws20
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -229,9 +252,13 @@ bindsym $mod+u resize shrink height 1 px or 1 ppt
 bindsym $mod+y resize grow width 1 px or 1 ppt
 
 #chromium
-bindsym $mod+c exec chromium 
+bindsym $mod+c exec chromium --profile-directory="Default"
+bindsym $mod+x exec chromium --profile-directory="Profile 1"
 #ranger file manager
 bindsym $mod+v exec exec urxvt -e ranger ~/casa/
+
+#new terminal in last dir
+bindsym $mod+mod1+Return exec lastdir.sh
 
 #next workspace
 bindsym $mod+Tab workspace next
