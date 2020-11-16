@@ -46,6 +46,20 @@ snippet item "Itemize" bA
 \end{itemize}
 endsnippet
 
+snippet table "Table" bA
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{rrr}
+		\toprule
+		& & \\\
+		\midrule
+		& & \\\
+		& & \\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+endsnippet
+
 #MATH STRUCTURES
 snippet mk "Math" wA
 $${1}$`!p
@@ -120,4 +134,18 @@ snippet si "si" i
 \SI{$1}{$2}$0
 endsnippet
 
+#FISICACCIA
+snippet pm "pm" iA
+$\pm$ 
+endsnippet
 
+#TEST
+snippet /mysnip([a-z]*)/ "Optionals" r
+this is always here!`!p
+if "a" in match.group(1):
+  snip += "only when a"
+if "b" in match.group(1):
+  snip += "only when b"`
+endsnippet
+#TEST
+#TEST
