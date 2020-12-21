@@ -1,0 +1,24 @@
+# /etc/anacrontab: configuration file for anacron
+# See anacron(8) and anacrontab(5) for details.
+
+SHELL=/bin/sh
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+# the maximal random delay added to the base delay of the jobs
+RANDOM_DELAY=0
+# the jobs will be started during the following hours only
+START_HOURS_RANGE=3-22
+
+#period in days     delay in minutes    job-identifier  command
+#1	            5	                cron.daily	nice run-parts --report /etc/cron.daily
+#7	            25	                cron.weekly	nice run-parts --report /etc/cron.weekly
+#@monthly            45	                cron.monthly    nice run-parts --report /etc/cron.monthly
+
+#custom
+#@daily              0                   snsbackup       /bin/su -s /bin/bash -c '/home/checco/scripts/backupall.sh 2> /home/checco/log/anacron_snsbackup.log' checco;
+@daily              0                   snsbackup       /bin/bash /home/checco/scripts/backupall.sh
+#@daily              0                   prova       	/bin/bash echo "ciao" > /var/log/anacron_snsbackup.log
+#@daily              1                   prova       	/bin/echo "ciao" > ~/log/ciao.log
+#@daily              1                   prova2       	/bin/echo "ciao" > ~/log/ciao.log
+#@daily              0                   prova3       	/bin/echo "ciao" > ~/log/ciao.log
+#@daily              0                   prova4       	/bin/echo "ciao" > /home/checco/log/ciao.log
