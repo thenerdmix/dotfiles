@@ -1,3 +1,4 @@
 #!/bin/bash
-backupsns.sh
-backupdotfiles.sh
+echo "tasi"
+/home/checco/scripts/backupsns.sh
+/home/checco/scripts/backupdotfiles.sh
