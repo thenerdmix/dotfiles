@@ -21,7 +21,7 @@ endglobal
 #DOCUMENT
 snippet template "Basic template" b
 \documentclass{article}
-\usepackage{~/packs/general}
+\usepackage{/home/checco/packs/general}
 
 \begin{document}
 	$0
@@ -101,6 +101,11 @@ endsnippet
 context "math()"
 snippet pd "Partial derivative" iA
 \pdv{$1}{$2}$0
+endsnippet
+
+context "math()"
+snippet norm "Norm" iA
+\norm{$1}$0
 endsnippet
 
 #MATH SYMBOLS
