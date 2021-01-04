@@ -1,4 +1,5 @@
 xrdb ~/.Xresources
 setxkbmap -layout it
 ~/.fehbg &
+redshift -O 3000
 exec i3
