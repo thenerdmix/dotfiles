@@ -169,8 +169,13 @@ $\pm$
 endsnippet
 
 context "math()"
-snippet vec "Vector" iA
-\mathbf{$1}$0
+snippet pos "Position vector" iA
+\pos{$1}$0
+endsnippet
+
+context "math()"
+snippet vel "Velocity vector" iA
+\vel{$1}$0
 endsnippet
 
 #TEST
@@ -181,5 +186,3 @@ if "a" in match.group(1):
 if "b" in match.group(1):
   snip += "only when b"`
 endsnippet
-#TEST
-#TEST
