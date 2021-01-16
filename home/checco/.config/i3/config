@@ -242,12 +242,8 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
 
 # Sreen brightness controls
-# ahhhh non mi funzionano più i tasti per regolare la luminosità
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
-#provo F1 e F2
-bindsym F1 exec xbacklight -dec 10 # decrease screen brightness
-bindsym F2 exec xbacklight -inc 10 # increase screen brightness
 
 # resize windows by 1 px
 bindsym $mod+o resize shrink width 1 px or 1 ppt
