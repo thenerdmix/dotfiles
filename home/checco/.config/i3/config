@@ -241,6 +241,10 @@ gaps outer 7
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
 
+#redshift keys
+bindsym F1 exec adjust_temperature.sh 0
+bindsym F2 exec adjust_temperature.sh 1
+
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
@@ -271,3 +275,10 @@ bindsym $mod+Shift+Tab workspace prev
 
 #screenshots
 bindsym Print exec clipboardscreenshot.sh
+
+#bar mode
+bindsym $mod+b bar mode toggle 
+
+#toggle gaps
+bindsym $mod+Shift+d    gaps inner all set 0; gaps outer all set 0
+bindsym $mod+Shift+t    gaps inner all set 7; gaps outer all set 7
