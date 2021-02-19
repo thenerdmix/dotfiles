@@ -40,6 +40,10 @@ autocmd filetype cpp nnoremap <F10> :w <bar> !g++ -std=c++11 grader.cpp % -o %:r
 "markdown
 autocmd filetype markdown nnoremap <F9> :w <bar> !firefox %<CR>
 
+"caps lock
+autocmd VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+autocmd VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+
 "fly between buffers
 nnoremap gb :ls<CR>:b<Space>
 nnoremap bn :bn<CR>
