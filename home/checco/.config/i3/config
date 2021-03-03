@@ -282,3 +282,7 @@ bindsym $mod+b bar mode toggle
 #toggle gaps
 bindsym $mod+Shift+d    gaps inner all set 0; gaps outer all set 0
 bindsym $mod+Shift+t    gaps inner all set 7; gaps outer all set 7
+
+#gaps size
+bindsym $mod+Shift+plus     gaps inner all plus 2; gaps outer all plus 2
+bindsym $mod+Shift+minus    gaps inner all minus 2; gaps outer all minus 2
