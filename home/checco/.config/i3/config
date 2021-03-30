@@ -212,7 +212,7 @@ bar {
 	position bottom
 	tray_output primary
 	status_command /home/checco/git_packs/bumblebee-status/bumblebee-status \
-        -m prova cmus nic disk:root cpu memory battery date time \
+        -m custom_redshift cmus nic disk:root cpu memory battery date time \
 		-p cmus.layout='cmus.main cmus.prev cmus.next cmus.shuffle' root.path=/ time.format="%H:%M" date.format="%a, %d %b %Y" \
 		-t iceberg-contrast
 }

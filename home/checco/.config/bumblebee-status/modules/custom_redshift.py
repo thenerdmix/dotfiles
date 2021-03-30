@@ -10,13 +10,15 @@ import util.cli
 import util.format
 import util.location
 
+import fontawesome as fa
+
 
 def get_redshift_value(module):
     widget = module.widget()
     f = open("/home/checco/log/current_temp.txt", "r")
     stringa = f.readline().strip()
     f.close()
-    widget.set("temp", stringa)
+    widget.set("temp", stringa+'K \uf06d')
     core.event.trigger("update", [widget.module.id], redraw_only=True)
 
 
