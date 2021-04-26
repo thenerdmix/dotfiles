@@ -1,0 +1,13 @@
+/* Questo namespace non serve per davvero
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+*/
+
+/* Hide horizontal tabs at the top of the window */
+#tabbrowser-tabs {
+  visibility: collapse !important;
+}
+
+/* Hide huge Tree Sidebar title */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  display: none;
+}
