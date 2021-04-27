@@ -4,4 +4,10 @@ xrandr --dpi 96
 xrdb ~/.Xresources
 setxkbmap -layout it
 ~/.fehbg &
+
+redshift -O 3000
+
+#cazzatina per forzare le app QT a seguire i themes GTK
+export QT_QPA_PLATFORMTHEME=gtk2
+
 exec i3
