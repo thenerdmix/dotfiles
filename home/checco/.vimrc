@@ -45,7 +45,7 @@ autocmd VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 autocmd VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
 
 "fly between buffers
-nnoremap gb :ls<CR>:b<Space>
+nnoremap gb :tabs<CR>:tabn<Space>
 nnoremap bn :bn<CR>
 
 "fly between tabs
