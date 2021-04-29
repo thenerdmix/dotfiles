@@ -271,7 +271,7 @@ bindsym $mod+y resize grow width 1 px or 1 ppt
 bindsym $mod+c exec apulse firefox 
 
 #telegram
-bindsym $mod+m exec telegram-desktop
+bindsym $mod+m exec apulse telegram-desktop
 #ranger file manager
 bindsym $mod+v exec exec urxvt -e ranger ~/casa/
 
