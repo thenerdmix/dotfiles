@@ -7,6 +7,9 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
+#search in history
+bindkey "^R" history-incremental-search-backward
+
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select

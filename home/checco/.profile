@@ -11,4 +11,4 @@ alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=/'
 export PROMPT_COMMAND="pwd > ~/.last_dir"
 
 # defining path variables
-PATH=$PATH:~/scripts
+PATH=$PATH:~/scripts:/home/checco/.local/share/gem/ruby/3.0.0/bin
