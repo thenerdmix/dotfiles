@@ -30,6 +30,12 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+#bluetooth applet
+exec --no-startup-id blueman-applet
+
+#onstart
+exec ~/.onstart
+
 # Use pactl to adjust volume in PulseAudio.
 # set $refresh_i3status killall -SIGUSR1 i3status
 # bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -268,10 +274,10 @@ bindsym $mod+y resize grow width 1 px or 1 ppt
 #bindsym $mod+c exec chromium --profile-directory="Profile 6"
 #bindsym $mod+x exec chromium --profile-directory="Profile 1"
 
-bindsym $mod+c exec apulse firefox 
+bindsym $mod+c exec firefox 
 
 #telegram
-bindsym $mod+m exec apulse telegram-desktop
+bindsym $mod+m exec telegram-desktop
 #ranger file manager
 bindsym $mod+v exec exec urxvt -e ranger ~/casa/
 
