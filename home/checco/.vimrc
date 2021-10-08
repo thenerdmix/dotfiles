@@ -66,6 +66,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'qpkorr/vim-renamer'
 Plug 'sirver/ultisnips'
+Plug 'preservim/nerdtree'
 
 "latex
 Plug 'lervag/vimtex'
@@ -83,6 +84,16 @@ let g:tex_conceal='abdmg'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+"nerdtree
+set mouse=a
+let g:NERDTreeMouseMode=3
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+" Start NERDTree and leave the cursor in it.
+autocmd VimEnter * NERDTree
 
 "change matching parenthesis highlighting
 colorscheme ron
