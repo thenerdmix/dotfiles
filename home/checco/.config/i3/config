@@ -249,12 +249,16 @@ client.urgent               $rd        $rd         $tx
 #########
 
 #set gaps width
-gaps inner 7 
-gaps outer 7
+#gaps inner 7 
+#gaps outer 7
+
+#set gaps width
+gaps inner 0 
+gaps outer 0
 
 #set volume control
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
-bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2.5%+
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2.5%-
 
 #redshift keys
 bindsym F1 exec adjust_temperature.sh 0
