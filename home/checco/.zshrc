@@ -7,8 +7,6 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
-#search in history
-bindkey "^R" history-incremental-search-backward
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -20,6 +18,9 @@ _comp_options+=(globdots)		# Include hidden files.
 # vi mode
 bindkey -v
 export KEYTIMEOUT=1
+
+#search in history
+bindkey "^R" history-incremental-search-backward
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
